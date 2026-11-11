@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+
+    <nav>
+
+        <div class="logo">
+            LOCAL <span>MAP</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#Home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#nearby">Nearby</a>
+            <a href="#about">About</a>
+
+        </div>
+
+        <button class="location-button">
+            📍 Use my location
+        </button>
+
+    </nav>
+
+
+    <main>
+
+        <!-- ==================== HOME / HERO ==================== -->
+
+        <section id="Home">
+
+            <div class="hero">
+
+                <div class="hero-content">
+
+                    <p class="small-heading">
+                        YOUR LOCAL SERVICE FINDER
+                    </p>
+
+                    <h1 class="first-heading">
+                        Find The Right Services , <br>
+                        <span>Right Near You</span>
+                    </h1>
+
+                    <div class="search-container">
+
+                        <div class="search-input">
+
+                            <span class="search-icon">🔍</span>
+
+                            <input
+                                type="text"
+                                id="text-holder"
+                                placeholder="Find your services here"
+                            >
+
+                            <button class="btn">
+                                Find Service
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <p class="small-heading1">
+                        Find
+                        <span class="service-suggestion">AC Repair</span>,
+                        <span class="service-suggestion">Plumber</span>,
+                        <span class="service-suggestion">Technician</span>
+                        And Other Local Services
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== SERVICES ==================== -->
+
+        <section id="services">
+
+            <div class="service-section">
+
+                <div class="service-heading">
+
+                    <p id="para">EXPLORE</p>
+
+                    <h2>
+                        What Services Do You Need ?
+                    </h2>
+
+                    <p id="para2">
+                        choose a service to find local providers
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <button class="service-card">
+
+                        <div class="service-icon">⚡</div>
+
+                        <h3>Electrician</h3>
+
+                        <p>
+                            Electrical work & repairs
+                        </p>
+
+                    </button>
+
+
+                    <button class="service-card">
+
+                        <div class="service-icon">❄️</div>
+
+                        <h3>AC Repair</h3>
+
+                        <p>
+                            AC service & maintenance
+                        </p>
+
+                    </button>
+
+
+                    <button class="service-card">
+
+                        <div class="service-icon">🔧</div>
+
+                        <h3>Plumber</h3>
+
+                        <p>
+                            Pipe & water repairs
+                        </p>
+
+                    </button>
+
+
+                    <button class="service-card">
+
+                        <div class="service-icon">💻</div>
+
+                        <h3>Laptop Repair</h3>
+
+                        <p>
+                            Computer & laptop service
+                        </p>
+
+                    </button>
+
+
+                    <button class="service-card">
+
+                        <div class="service-icon">🪚</div>
+
+                        <h3>Carpenter</h3>
+
+                        <p>
+                            Furniture & wood work
+                        </p>
+
+                    </button>
+
+
+                    <button class="service-card">
+
+                        <div class="service-icon">🧹</div>
+
+                        <h3>Cleaning</h3>
+
+                        <p>
+                            Home & office cleaning
+                        </p>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== NEARBY / RESULTS ==================== -->
+
+        <section id="nearby">
+
+            <div class="section1-result">
+
+                <div class="section1-heading">
+
+                    <p class="p1">
+                        Nearby
+                    </p>
+
+                    <h3>
+                        Local service providers
+                    </h3>
+
+                    <p class="p2">
+                        Please Select Your Service
+                    </p>
+
+                </div>
+
+                <button class="btn2">
+                    View-All->
+                </button>
+
+            </div>
+
+
+            <div class="rslt"></div>
+
+
+            <!-- Contact Provider Popup -->
+
+            <div class="contact-popup">
+
+                <h2>
+                    Contact Provider
+                </h2>
+
+                <p class="popup-name"></p>
+                <p class="popup-work"></p>
+                <p class="popup-rating"></p>
+
+                <button class="close-popup">
+                    Close
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== MAP SECTION ==================== -->
+
+        <section>
+
+            <div class="map-section">
+
+                <div class="map-text">
+
+                    <p id="map-para">
+                        Find Your Way
+                    </p>
+
+                    <h1>
+                        Know Where Are You Going
+                    </h1>
+
+                    <p>
+                        Local Help Will Help You To Find Services Near You,
+                    </p>
+
+                    <button class="btn3">
+                        Get Directions ->
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== LOCAL MAP ==================== -->
+
+        <section>
+
+            <div class="local-map">
+
+                <div class="local-map-road-1"></div>
+
+                <div class="local-map-road road-2"></div>
+
+                <div class="local-map-road road-3"></div>
+
+                <div class="local-map-user">
+                    📍
+                </div>
+
+                <div class="local-map-provider electrician">
+                    ⚡
+                </div>
+
+                <div class="local-map-provider repair">
+                    🔧
+                </div>
+
+                <div class="local-map-provider laptop">
+                    💻
+                </div>
+
+                <div class="local-map-landmark">
+                    🕌 Jamia
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== ABOUT ==================== -->
+
+        <section id="about">
+
+            <div class="about-section">
+
+                <div class="about-text">
+
+                    <p>
+                        ABOUT LOCALMAP
+                    </p>
+
+                    <h2>
+                        Find.Undestand.Navigate.Connect
+                    </h2>
+
+                    <p>
+                        LocalMap is being built to make finding local services
+                        simple for everyone — even when you don't know exactly
+                        where a service provider is.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Local<span>Map</span>
+        </div>
+
+        <p>
+            Making local services easier to find.
+        </p>
+
+        <p class="copyright">
+            © 2026 LocalMap
+        </p>
+
+    </footer>
+
+
+    <!-- ==================== LOCATION POPUP ==================== -->
+
+    <div class="location-popup">
+
+        <div class="location-icon">
+            📍
+        </div>
+
+        <h2>
+            Location Feature
+        </h2>
+
+        <p>
+            Location services are coming soon!
+        </p>
+
+        <button class="close-location">
+            Got it
+        </button>
+
+    </div>
+
+
+    <!-- ==================== DIRECTIONS POPUP ==================== -->
+
+    <div class="directions-popup">
+
+        <div class="direction-icon">
+            🧭
+        </div>
+
+        <h2>
+            Directions Coming Soon
+        </h2>
+
+        <p>
+            We're working on a simple way to guide you to local services.
+        </p>
+
+        <button class="close-directions">
+            Got it
+        </button>
+
+    </div>
+
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
